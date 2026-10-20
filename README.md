@@ -9,7 +9,7 @@ A Claude Code mod that works like the desktop app's "Reply": select text in the 
 - Each quote shows in the band above the prompt, with **▼ Show more** for long ones and **✕ Remove** to drop it.
 - Long quotes are sent to Claude as their start and end only (Claude already has the text in context), which saves tokens. Each quote shows a rough token estimate.
 
-Mouse selection is only visible to mods in fullscreen mode.
+Known limit: mouse selection is only visible to mods in fullscreen mode.
 
 ## Install
 
@@ -28,3 +28,12 @@ claude plugin install reply-quote --marketplace DiegoHermosilloP/reply-quote
 ## Settings
 
 Under `/config`: preview length, maximum quotes, maximum characters sent per quote (0 sends every quote whole), and the colours of quotes, selection and quoted text.
+
+## More mods
+
+[usage-dots](https://github.com/DiegoHermosilloP/usage-dots): plan usage and
+context-window gauges above the prompt, plus a live prompt token estimate.
+
+## License
+
+MIT
