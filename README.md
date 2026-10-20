@@ -2,6 +2,8 @@
 
 A Claude Code mod that works like the desktop app's "Reply": select text in the terminal, click **Reply ↰**, and your next prompt is sent as a reply to that quoted part.
 
+![A quoted reply above the prompt](images/reply.png)
+
 - Select text with the mouse, in a response or in your own prompt. A box above the prompt offers **Reply ↰**.
 - Quotes stack: select and reply to several parts, then write once to reply to all of them.
 - Each quote shows in the band above the prompt, with **▼ Show more** for long ones and **✕ Remove** to drop it.
