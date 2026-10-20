@@ -1,0 +1,5 @@
+{
+  "name": "reply-quote",
+  "owner": { "name": "DiegoHermosilloP" },
+  "plugins": [{ "name": "reply-quote", "source": "./" }]
+}

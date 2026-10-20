@@ -1,0 +1,78 @@
+{
+  "name": "reply-quote",
+  "version": "0.3.0",
+  "description": "Select text with the mouse, click Reply, and your next prompt is sent as a reply to that quoted part.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "previewChars": {
+      "type": "number",
+      "title": "Quote preview length",
+      "description": "Characters of a quote shown before 'Show more'.",
+      "default": 300,
+      "min": 40,
+      "max": 3000
+    },
+    "maxQuotes": {
+      "type": "number",
+      "title": "Maximum quotes",
+      "description": "How many quotes can stack before the oldest drops.",
+      "default": 5,
+      "min": 1,
+      "max": 20
+    },
+    "quoteColor": {
+      "type": "string",
+      "title": "Quote color",
+      "description": "Border and heading color of quotes.",
+      "default": "cyan",
+      "options": [
+        "cyan",
+        "green",
+        "magenta",
+        "blue",
+        "red",
+        "yellow",
+        "white"
+      ]
+    },
+    "selectionColor": {
+      "type": "string",
+      "title": "Selection color",
+      "description": "Border and text color of the Reply offer for a fresh selection.",
+      "default": "yellow",
+      "options": [
+        "yellow",
+        "cyan",
+        "green",
+        "magenta",
+        "blue",
+        "red",
+        "white"
+      ]
+    },
+    "quoteTextColor": {
+      "type": "string",
+      "title": "Quote text color",
+      "description": "Color of the quoted text itself.",
+      "default": "gray",
+      "options": [
+        "gray",
+        "white",
+        "cyan",
+        "green",
+        "magenta",
+        "blue",
+        "red",
+        "yellow"
+      ]
+    },
+    "sentChars": {
+      "type": "number",
+      "title": "Max characters sent per quote",
+      "description": "A longer quote is sent as its start and end only, since Claude already has the text in context. 0 sends every quote whole.",
+      "default": 600,
+      "min": 0,
+      "max": 20000
+    }
+  }
+}
